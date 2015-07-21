@@ -33,10 +33,8 @@
       \expandafter
       \list
         \csname label\@enumctr\endcsname
-        {%
-          \enumhook \csname enumhook\romannumeral\the\@enumdepth\endcsname%
-          \usecounter\@enumctr\def\makelabel##1{\hss\llap{##1}}%
-        }%
+        {\usecounter\@enumctr\def\makelabel##1{\hss\llap{##1}}%
+          \enumhook \csname enumhook\romannumeral\the\@enumdepth\endcsname}%
   \fi}
 \def\itemize{%
   \ifnum \@itemdepth >\thr@@\@toodeep\else
@@ -45,12 +43,10 @@
     \expandafter
     \list
       \csname\@itemitem\endcsname
-      {%
-        \itemhook \csname itemhook\romannumeral\the\@itemdepth\endcsname%
-        \def\makelabel##1{\hss\llap{##1}}%
-      }%
+      {\def\makelabel##1{\hss\llap{##1}}%
+        \itemhook \csname itemhook\romannumeral\the\@itemdepth\endcsname}%
   \fi}
 \newenvironment{description}
-  {\list{}{\deschook\labelwidth\z@ \itemindent-\leftmargin
-           \let\makelabel\descriptionlabel}}
+  {\list{}{\labelwidth\z@ \itemindent-\leftmargin
+           \let\makelabel\descriptionlabel\deschook}}
   {\endlist}

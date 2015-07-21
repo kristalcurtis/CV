@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -19,8 +19,7 @@
 
 % adjust the page margins
 %\usepackage[scale=0.8]{geometry}
-\usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{2.5cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{2.5cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
@@ -34,11 +33,11 @@
 \familyname{Curtis}
 %\title{Resumé title (optional)}               % optional, remove the line if not wanted
 %\address{880 A Washington Street}{Mountain View, CA 94043}    % optional, remove the line if not wanted
-%\mobile{(702) 592-1110}                    % optional, remove the line if not wanted
+\mobile{(702) 592-1110}                    % optional, remove the line if not wanted
 %\phone{phone (optional)}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{kcurtis@eecs.berkeley.edu}                      % optional, remove the line if not wanted
-%\homepage{www.eecs.berkeley.edu/~kcurtis}                % optional, remove the line if not wanted
+\homepage{www.eecs.berkeley.edu/~kcurtis}                % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
@@ -66,14 +65,14 @@
 %\cventry{2007 -- 2010}{M.S. in Computer Science}{University of California, Berkeley}{Advised by David Patterson and Armando Fox}{GPA: 3.76/4.0,  Major: Artificial Intelligence, Minors: Systems and Statistics} {} % arguments 3 to 6 can be left empty
 
 \cventry{2002 -- 2007}{B.S. in Computer Science, B.S. in Electrical Engineering}{University of Nevada, Las Vegas}{}{GPA: 3.98/4.0}{}
-%\vspace{\smallwidth}
+\vspace{\smallwidth}
 
 \section{Experience}
 
 % GSR - AMP Lab
 \cventry{2011 -- 2015}{Graduate Researcher in the Algorithms, Machines, and People (AMP) Lab}{}{UC Berkeley, CA}{}{
 \begin{itemize}%
-\item Designed and implemented distributed algorithms to recognize and deploy specialized processing on difficult regions of the genome (SiRen) using Scala \& Spark
+\item Designed and implemented distributed algorithms to recognize and deploy specialized processing on difficult regions of the genome (SiRen) using Scala and Spark
 \item Contributed to a benchmarking framework for genomics algorithms (SMaSH)
 \item Developed a short-read alignment algorithm for DNA sequencing data (SNAP) using Scala
 \end{itemize}}
@@ -81,15 +80,15 @@
 % GSR - RAD Lab
 \cventry{2008 -- 2011}{Graduate Researcher in the Reliable, Adaptive, Distributed (RAD) Lab}{}{UC Berkeley, CA}{}{
 \begin{itemize}%
-\item Designed modeling infrastructure for database query SLO compliance prediction using Scala \& R
+\item Designed modeling infrastructure for database query SLO compliance prediction using Scala and R
 \item Built performance models for three-tier web 2.0-style apps using R
 \end{itemize}}
 
 % GSI
-\cventry{Spring \& Fall 2010}{Graduate Student Instructor for Software Engineering}{}{UC Berkeley, CA}{}{
+\cventry{Spring, Fall 2010}{Graduate Student Instructor for Software Engineering}{}{UC Berkeley, CA}{}{
 \begin{itemize}%
-\item Led discussion sections and supervised project teams for course on developing software as a service (SaaS) applications using Ruby on Rails \& cloud computing
-\item Supervised project teams for course on developing mobile applications for iOS \& Android
+\item Led discussion sections and supervised project teams for course on developing software as a service (SaaS) applications using Ruby on Rails and cloud computing
+\item Supervised project teams for course on developing mobile applications for iOS and Android
 \end{itemize}}
 
 % Internship
@@ -105,21 +104,21 @@
 \item Developed gesture recognition algorithms for robot vision using C++ via Windows Visual Studio
 \end{itemize}}
 
-%\vspace{\smallwidth}
+\vspace{\smallwidth}
 \section{Technical Skills}
 \cvline{Languages}{Scala, Java, R, C++, Ruby, JavaScript, jQuery}
 \cvline{Frameworks}{Spark (including MLlib), Hadoop, Rails}
 \cvline{Interests}{Software Engineering, Big Data, Distributed Computing, Machine Learning, Genomics}
-%\vspace{\smallwidth}
-%\newline{}
+\vspace{\smallwidth}
+\newline{}
 \section{Honors and Awards}
-%\vspace{-0.4cm}
+\vspace{-0.4cm}
 \cvlistitem{Facebook Grace Hopper Women in Computing Scholarship (2011)}
 \cvlistitem{National Science Foundation Graduate Research Fellowship (2008)}
 \cvlistitem{University of California, Berkeley Chancellor's Fellowship (2007)}
 \cvlistitem{University of Nevada, Las Vegas \textit{Summa Cum Laude} Graduate,  (2007)}
 
-%\vspace{\smallwidth}
+\vspace{\smallwidth}
 \section{Leadership}
 \cventry{2009 -- 2011}{Activity Coordinator for Women in Computer Science and Engineering (WICSE)}{}{}{}{
 \begin{itemize}%

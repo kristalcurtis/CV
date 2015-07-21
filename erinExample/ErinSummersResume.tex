@@ -1,0 +1,139 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2011 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\addtolength{\topmargin}{-1cm}
+\addtolength{\textheight}{3.0cm}
+\newcommand{\smallwidth}{-0.5cm}
+\newcommand{\smallwidthtwo}{-0.45cm}
+
+% personal data
+\firstname{Erin}
+\familyname{Summers}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+%\address{880 A Washington Street}{Mountain View, CA 94043}    % optional, remove the line if not wanted
+\mobile{(704) 576-2228}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{erinbot@gmail.com}                      % optional, remove the line if not wanted
+\homepage{erinbot.com}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace{-1 cm}
+
+\section{Education}
+\cventry{2007 -- 2012}{Ph.D. Electrical Engineering and Computer Science}{University of California at Berkeley}{Berkeley}{GPA: 3.8/4.0,  Major: Control Systems, Minors: Statistics and Computational Science Engineering} {} % arguments 3 to 6 can be left empty
+
+\cventry{2002 -- 2006}{B.S. Computer Engineering and Electrical Engineering}{North Carolina State University}{Raleigh}{GPA: 4.0/4.0}{}
+\vspace{\smallwidth}
+
+\section{Experience}
+
+\cventry{Jan 2013}{Software Engineer}{Facebook}{Menlo Park, CA}{www.facebook.com}{
+\begin{itemize}
+\item Increasing growth of Facebook Pages through new user interfaces and AI metrics
+\item Developing new user interface for Facebook Pages on Android
+\end{itemize}
+}
+
+\cventry{Aug -- Oct 2012}{Data Science Fellow}{Insight}{Palo Alto, CA}{www.FlatFinderApp.com}{
+\begin{itemize}%
+\item Designed and developed an apartment search management mobile app
+\item Scraped content from Craigslist using Python and built MySQL database
+\item Designed user interface with jQuery Mobile, JavaScript, Google Maps API, Flask \& Python
+\end{itemize}
+}
+
+\cventry{Mar -- Dec 2012}{Conference Mobile App Founder}{ACC Mobile App 2012}{Berkeley, CA}{}{
+\begin{itemize}%
+\item Developed and managed mobile conference management app to replace a paper booklet containing 2000+ talks and 22 parallel sessions over 4 days with 1400 attendees
+\item Designed and created SQL database, and custom user interface for Android and iPhone
+\item Managed team of three working on back-end, iPhone development and marketing
+\end{itemize}}
+
+\cventry{2007 -- 2012 }{Stability of Large-Scale Systems Graduate Researcher}{}{ UC Berkeley, CA}{}{
+\begin{itemize}%
+\item Derived theorems and developed tools in Matlab to guarantee stability of large-scale dynamical systems such as airplanes, the Internet, and biological networks
+\end{itemize}}
+
+\cventry{Jan -- May 2012 }{Politwitics}{UC Berkeley}{Berkeley, CA}{}{
+\begin{itemize}%
+\item Summarized political tweets to reveal most representative tweets about candidates
+\item Collected, cleaned and analyzed political tweets using the Twitter API and Python
+\item Implemented k-mean, c-means, and NMF in Matlab to cluster  tweets
+\end{itemize}}
+
+\cventry{June -- Aug 2011}{Flight Safety Control Engineer}{NASA}{Mountain View, CA}{}{
+\begin{itemize}%
+\item Created and developed verification software using Matlab to ensure stability of aircraft
+\item Certified that the stability region for a flight system is 3 times larger than previous results
+\end{itemize}}
+
+
+
+\vspace{\smallwidth}
+\section{Technical skills}
+\cvline{Languages}{Python, Java, Matlab, SQL, JavaScript, jQuery, Google Maps API, C++,  C, Hadoop}
+\cvline{Software \& OS}{Linux, Windows, Mac OS, Android, iPhone, Eclipse, xCode}
+\cvline{Interests}{Data Science, Data Mining, Optimization, Machine Learning, Mobile Development}
+\vspace{\smallwidth}
+\newline{}
+\section{Honors and Awards}
+\vspace{-0.4cm}
+\cvlistitem{Best Presentation of Session American Controls Conference 2011, 2012}
+\cvlistitem{Bosch Robotics Business Model Innovation Challenge Winner (2011)}
+\cvlistitem{Zonta Amelia Earhart Fellow (2011)}
+\cvlistitem{NASA Harriett Jenkins Fellow (2010)}
+\cvlistitem{National Science Foundation Graduate Research Fellow (2008)}
+%\cvlistitem{Valedictorian (2006)}
+
+\vspace{\smallwidth}
+\section{Leadership and Activities }
+\cventry{2009 -- 2010}{President of Women in Computer Science and Engineering (WICSE)}{}{}{}{
+\begin{itemize}%
+\item Tripled the revenue by establishing long-lasting partnerships tech companies
+\item Led outreach events to teach girls in grades K-12 about science and engineering		
+\end{itemize}
+}
+\cventry{2008 -- 2012}{Lead Singer, Erinbot and the Positive Eigenvalues}{}{}{}{
+\begin{itemize}
+\item Perform in a rock and roll band composed of EECS professors and grad students
+\end{itemize}
+}
+\end{document}
