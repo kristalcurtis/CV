@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{dsfont}
 \usepackage{geometry, textcomp}
+\usepackage{paralist}
 
 %\input{header.tex}
 \renewcommand{\familydefault}{\sfdefault}
@@ -23,11 +24,9 @@
 % For letter paper
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\geometry{left = 0.85 in, right = 0.85 in, top = 0.75 in, bottom =
-%  0.75 in}
+\geometry{left = 0.85 in, right = 0.85 in, top = 0.75 in, bottom = 0.75 in}
 
-\geometry{left = 0.85 in, right = 0.85 in, top = 0.5 in, bottom =
-  0.5 in}
+%\geometry{left = 0.85 in, right = 0.85 in, top = 0.5 in, bottom = 0.5 in}
 
 
 % Paragraph spacing
@@ -43,9 +42,14 @@
  \pagestyle{empty}
 
 % Set custom widths
-\newcommand{\parwidth}{4.8 in}
-\newcommand{\pagewidth}{6.5 in}
-\newcommand{\tabwidth}{2.0 in}
+%\newcommand{\parwidth}{4.8 in}
+\newcommand{\parwidth}{5.3 in}
+%\newcommand{\pagewidth}{6.5 in}
+\newcommand{\pagewidth}{6.8 in}
+%\newcommand{\tabwidth}{2.0 in}
+\newcommand{\tabwidth}{1.5 in}
+
+\def\labelitemi{--}
 
 % Section heading
 \newcommand{\head}[1]{
@@ -90,8 +94,8 @@ www.eecs.berkeley.edu/$\sim$kcurtis
 \end{minipage}
 \begin{minipage}{0.5 \textwidth}
 \begin{flushright}
-180 Brannan St. \#311 \\
-San Francisco, CA 94107 \\
+924 Chenery Street\\
+San Francisco, CA 94131\\
 702.592.1110\\
 kcurtis@eecs.berkeley.edu\\
 \end{flushright}
@@ -108,20 +112,20 @@ kcurtis@eecs.berkeley.edu\\
 \begin{tabbing}
 \hspace{\tabwidth} \= \\ 
 
-May 2014 (Expected) \> \emph{Ph.D. in Computer Science, University of California, Berkeley} \\ 
-December 2010 \> \emph{M.S. in Computer Science, University of California, Berkeley} \\ 
+December 2015 \> \emph{Ph.D. in Computer Science}, University of California, Berkeley \\ 
+December 2010 \> \emph{M.S. in Computer Science}, University of California, Berkeley \\ 
 \> \parbox[t]{\parwidth}{Advisors: David Patterson and Armando Fox } \\ 
 \> \parbox[t]{\parwidth}{Major in Artificial Intelligence} \\
 \> \parbox[t]{\parwidth}{Minors in Systems and Statistics} \\
 \> \parbox[t]{\parwidth}{Graduate GPA: 3.76} \\ \\
 
-May 2007 \> \emph{B.S. in Computer Science, University of Nevada, Las Vegas} \\ 
-\> \emph{B.S. in Electrical Engineering, University of Nevada, Las Vegas} \\ 
+May 2007 \> \emph{B.S. in Computer Science}, University of Nevada, Las Vegas \\ 
+\> \emph{B.S. in Electrical Engineering}, University of Nevada, Las Vegas \\ 
 \> \parbox[t]{\parwidth}{Minor in Mathematics} \\
 \> \parbox[t]{\parwidth}{Undergraduate GPA: 3.98} \\ \\
 
 Research Interests \> \parbox[t]{\parwidth}{
-Large-Scale Distributed Systems, Cloud Computing, Machine Learning, Performance Modeling, Scalable Storage, Crowdsourcing, Genomics
+Large-Scale Distributed Systems, Data Science, Cloud Computing, Machine Learning, Genomics, Performance Modeling, Scalable Storage
 } \\
 
 \end{tabbing}
@@ -136,16 +140,18 @@ Large-Scale Distributed Systems, Cloud Computing, Machine Learning, Performance 
 \begin{tabbing}
 \hspace{\tabwidth} \= \\ 
 
-\parbox[t]{\pagewidth}{Durga Kandasamy, Kristal Curtis, Armando Fox, and David Patterson.  "Using Diversity within the Crowd."  Poster and extended abstract at the 2012 ACM Conference on Computer Supported Collaborative Work (CSCW 2012).}\\ \\
-\parbox[t]{\pagewidth}{Matei Zaharia, William J. Bolosky, Kristal Curtis, Armando Fox, David Patterson, Scott Shenker, Ion Stoica, Richard Karp, and Taylor Sittler.  "Faster and More Accurate Sequence Alignment with SNAP."  ArXiv Technical Report 1111.5572v1, Nov. 2011.}\\ \\
-\parbox[t]{\pagewidth}{Michael Armbrust, Kristal Curtis, Tim Kraska, Armando Fox, Michael J. Franklin, and David A. Patterson.  "PIQL:  Success-Tolerant Query Processing in the Cloud."  Proceedings of the Very Large Data Bases Endowment Inc. (VLDB Endowment), Vol. 5, No. 3, 2011.}\\ \\
-\parbox[t]{\pagewidth}{Kristal Curtis.  "Determining SLO Violations at Compile Time."  MS Thesis, UC Berkeley, December 2010.}\\ \\
-\parbox[t]{\pagewidth}{Kristal Curtis, Peter Bod\'{i}k, Michael Armbrust, Armando Fox, Michael Jordan, and David Patterson.  "Determining SLO Violations at Compile Time."  Work-In-Progress talk and poster at the 8th USENIX Conference on File and Storage Technologies (FAST 2010).}\\ \\
-\parbox[t]{\pagewidth}{Kristal Curtis, Peter Bod\'{i}k, Archana Ganapathi, Armando Fox, Michael Jordan, and David Patterson.  "Combining Queueing-theoretic and Statistical Techniques for Modeling the Impact of Dynamic Workload Mixes on Web 2.0 Service Times."  Poster at the 22nd ACM Symposium on Operating Systems Principles (SOSP 2009).}\\
+\parbox[t]{\pagewidth}{\textbf{Kristal Curtis}, Ameet Talwalkar, Matei Zaharia, Armando Fox, and David Patterson.  "SiRen:  Leveraging Similar Regions for Efficient \& Accurate Variant Calling."  Technical Report No. UCB/EECS-2015-159, 2015.}\\ \\
+\parbox[t]{\pagewidth}{Ameet Talwalkar, Jesse Liptrap, Julie Newcomb, Christopher Hartl, Jonathan Terhorst, \textbf{Kristal Curtis}, Ma'ayan Bresler, Yun S. Song, Michael I. Jordan, and David Patterson.  "SMaSH:  a benchmarking toolkit for human genome variant calling."  Bioinformatics, Vol. 30, No. 19, pp. 2787--2795, 2014.}\\ \\
+\parbox[t]{\pagewidth}{Durga Kandasamy, \textbf{Kristal Curtis}, Armando Fox, and David Patterson.  "Using Diversity within the Crowd."  Poster and extended abstract at the 2012 ACM Conference on Computer Supported Collaborative Work (CSCW 2012).}\\ \\
+\parbox[t]{\pagewidth}{Matei Zaharia, William J. Bolosky, \textbf{Kristal Curtis}, Armando Fox, David Patterson, Scott Shenker, Ion Stoica, Richard Karp, and Taylor Sittler.  "Faster and More Accurate Sequence Alignment with SNAP."  ArXiv Technical Report 1111.5572v1, 2011.}\\ \\
+\parbox[t]{\pagewidth}{Michael Armbrust, \textbf{Kristal Curtis}, Tim Kraska, Armando Fox, Michael J. Franklin, and David Patterson.  "PIQL:  Success-Tolerant Query Processing in the Cloud."  Proceedings of the Very Large Data Bases Endowment Inc. (VLDB Endowment), Vol. 5, No. 3, 2011.}\\ \\
+\parbox[t]{\pagewidth}{\textbf{Kristal Curtis}.  "Determining SLO Violations at Compile Time."  MS Thesis, UC Berkeley, December 2010.}\\ \\
+\parbox[t]{\pagewidth}{\textbf{Kristal Curtis}, Peter Bod\'{i}k, Michael Armbrust, Armando Fox, Michael Jordan, and David Patterson.  "Determining SLO Violations at Compile Time."  Work-In-Progress talk and poster at the 8th USENIX Conference on File and Storage Technologies (FAST 2010).}\\ \\
+\parbox[t]{\pagewidth}{\textbf{Kristal Curtis}, Peter Bod\'{i}k, Archana Ganapathi, Armando Fox, Michael Jordan, and David Patterson.  "Combining Queueing-theoretic and Statistical Techniques for Modeling the Impact of Dynamic Workload Mixes on Web 2.0 Service Times."  Poster at the 22nd ACM Symposium on Operating Systems Principles (SOSP 2009).}\\
 %\parbox[t]{\pagewidth}{"Automatic Workload Evaluation (AWE):  Characterizing Web 2.0 Workload Behavior."  Invited talk at Microsoft Research (MSR) Redmond, May 2009.}\\ \\
 \end{tabbing}
 
-\pagebreak
+%\pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Employment
@@ -154,21 +160,39 @@ Large-Scale Distributed Systems, Cloud Computing, Machine Learning, Performance 
 
 \begin{tabbing}
 \hspace{\tabwidth} \= \\ 
-March 2008 - Present \> \emph{Graduate Researcher, University of California, Berkeley} \\ 
+2011 - 2015 \> \parbox[t]{\parwidth}{\textit{Graduate Researcher in the Algorithms, Machines, and People (AMP) Lab}, University of California, Berkeley}\\
 \> \parbox[t]{\parwidth}{
-Researching performance modeling for scalable storage, genomics
+\begin{compactitem}
+\item Designed and implemented distributed algorithms to recognize and deploy specialized processing on difficult regions of the genome (SiRen) using Scala \& Spark
+\item Contributed to a benchmarking framework for genomics algorithms (SMaSH)
+\item Developed a short-read alignment algorithm for DNA sequencing data (SNAP) using Scala
+\end{compactitem}
+} \\
+
+\hspace{\tabwidth} \= \\ 
+2008 - 2011 \> \parbox[t]{\parwidth}{\textit{Graduate Researcher in the Reliable, Adaptive, Distributed (RAD) Lab}, University of California, Berkeley}\\
+\> \parbox[t]{\parwidth}{
+\begin{compactitem}
+\item Designed modeling infrastructure for database query SLO compliance prediction using Scala \& R
+\item Built performance models for three-tier web 2.0-style apps using R
+\end{compactitem}
 }\\
 
 \hspace{\tabwidth} \= \\ 
-June 2008 - August 2008 \> \emph{Software Engineering Intern, Google, Mountain View, CA} \\ 
+June - August 2008 \> \emph{Software Engineering Intern in Search Quality}, Google, Mountain View, CA \\ 
 \> \parbox[t]{\parwidth}{
-Worked on Search Quality team developing approaches for handling ambiguous entities
+\begin{compactitem}
+\item Designed a machine learning algorithm for handling ambiguous search queries
+\item Built a MapReduce pipeline using C++ that ran on O(1,000)-node clusters
+\end{compactitem}
 }\\
 
 \hspace{\tabwidth} \= \\ 
-June 2003 - June 2007 \> \emph{Undergraduate Researcher, University of Nevada, Las Vegas} \\ 
+2003 - 2007 \> \emph{Undergraduate Researcher}, University of Nevada, Las Vegas \\ 
 \> \parbox[t]{\parwidth}{
-Researched robot vision for telecontrolled scientific experiments
+\begin{compactitem}
+\item Developed gesture recognition algorithms for robot vision using C++ via Windows Visual Studio
+\end{compactitem}
 }\\
 
 \end{tabbing}
@@ -181,12 +205,12 @@ Researched robot vision for telecontrolled scientific experiments
 \hspace{\tabwidth} \= \\
 
 Fall 2010 \> \emph{Teaching Assistant for Software Engineering}\\
-\> \parbox[t]{\parwidth}{Department of Computer Science, University of California, Berkeley} \\ 
-\> \parbox[t]{\parwidth}{Course focused on developing software as a service (SaaS) applications using Ruby on Rails and cloud computing} \\ \\
+\> \parbox[t]{\parwidth}{Computer Science Division, University of California, Berkeley} \\ 
+\> \parbox[t]{\parwidth}{Led discussion sections and supervised project teams for course on developing software as a service (SaaS) applications using Ruby on Rails \& cloud computing} \\ \\
 
 Spring 2010 \> \emph{Teaching Assistant for Software Engineering} \\
-\> \parbox[t]{\parwidth}{Department of Computer Science, University of California, Berkeley} \\ 
-\> \parbox[t]{\parwidth}{Course focused on developing mobile applications for iOS and Android} \\ 
+\> \parbox[t]{\parwidth}{Computer Science Division, University of California, Berkeley} \\ 
+\> \parbox[t]{\parwidth}{Supervised project teams for course on developing mobile applications for iOS \& Android} \\ 
 
 \end{tabbing}
 
@@ -203,9 +227,9 @@ Spring 2010 \> \emph{Teaching Assistant for Software Engineering} \\
 
 2008 \> \emph{National Science Foundation Graduate Research Fellowship} \\ \\
 
-2007 \> \emph{Chancellor's Fellowship, University of California, Berkeley} \\ \\
+2007 \> \emph{Chancellor's Fellowship}, University of California, Berkeley \\ \\
 
-2007 \> \emph{Graduated Summa Cum Laude, University of Nevada, Las Vegas} \\ \\
+2007 \> \emph{Graduated Summa Cum Laude}, University of Nevada, Las Vegas \\ \\
 \end{tabbing}
 
 
@@ -218,9 +242,22 @@ Spring 2010 \> \emph{Teaching Assistant for Software Engineering} \\
 \begin{tabbing}
 \hspace{\tabwidth} \= \\
 
-Summer 2010 - Present \> \emph{Mentor to Undergraduate Researchers}\\ \\
+2010 - 2013 \> \emph{Mentor to Undergraduate Researchers}\\
+\> \parbox[t]{\parwidth}{
+\begin{compactitem}
+\item Designed crowdsourcing and genomics projects
+\item Supervised three student researchers
+\end{compactitem}
+} \\ \\
 
-Summer 2009 - Spring 2011 \> \emph{Leadership for Women in Computer Science and Engineering (WICSE)} \\
+2009 - 2011 \> \emph{Leadership for Women in Computer Science and Engineering (WICSE)} \\
+\> \parbox[t]{\parwidth}{
+\begin{compactitem}
+\item Organized weekly networking events
+\item Recruited and supervised volunteers to participate in events
+\end{compactitem}
+} \\
+
 \end{tabbing}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -231,8 +268,9 @@ Summer 2009 - Spring 2011 \> \emph{Leadership for Women in Computer Science and 
 
 \begin{tabbing}
 \hspace{\tabwidth} \= \\
-
-\parbox[t]{\pagewidth}{Program Committee, Managing Large-Scale Systems via the Analysis of System Logs and the Application of Machine Learning Techniques (SLAML 2011)}\\ \\
+\parbox[t]{\pagewidth}{Program Committee, The First International Workshop on Hot Topics in Big Data and Networking (HotData I) 2014}\\ \\
+\parbox[t]{\pagewidth}{Reviewer, Symposium on Operating Systems Principles (SOSP) 2013}\\ \\
+\parbox[t]{\pagewidth}{Program Committee, Managing Large-Scale Systems via the Analysis of System Logs and the Application of Machine Learning Techniques (SLAML) 2011}\\ \\
 \parbox[t]{\pagewidth}{Reviewer, IEEE Transactions on Network and Service Management}\\ \\
 \parbox[t]{\pagewidth}{Reviewer, Elsevier Computer Networks Journal}
 
