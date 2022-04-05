@@ -24,6 +24,8 @@
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
+%\usepackage{hyperref}
+
 \addtolength{\topmargin}{-1cm}
 \addtolength{\textheight}{3.0cm}
 \newcommand{\smallwidth}{-0.5cm}
@@ -37,8 +39,8 @@
 \mobile{(702) 592-1110}                    % optional, remove the line if not wanted
 %\phone{phone (optional)}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
-\email{kcurtis@eecs.berkeley.edu}                      % optional, remove the line if not wanted
-\homepage{www.eecs.berkeley.edu/\textasciitilde kcurtis}                % optional, remove the line if not wanted
+\email{kristal.curtis@gmail.com}                      % optional, remove the line if not wanted
+\homepage{linkedin.com/in/kristalcurtis}
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
@@ -68,20 +70,33 @@
 \cventry{2002 -- 2007}{B.S. in Computer Science, B.S. in Electrical Engineering}{University of Nevada, Las Vegas}{}{GPA: 3.98/4.0}{}
 %\vspace{\smallwidth}
 
-\section{Experience}
+\section{Work Experience}
 
-\cventry{2019 -- }{Senior Software Engineer}{Splunk}{San Francisco, CA}{}{
+\cventry{2022 --}{Engineering Manager}{Splunk}{San Francisco, CA}{}{
 \begin{itemize}
-\item Conducted R\&D on log parsing / data summarization using Python
-\item Productionized log parsing model in streaming machine learning system using Scala
-% TODO: add # patents filed
+\item Led a team of 12 engineers and data / applied scientists across five projects related to providing assistive intelligence experiences throughout the Splunk portfolio
+\item Collaborated with cross-functional peers and leaders within the ML team and in other Splunk business units (Security, Observability)
+\end{itemize}}
+
+\cventry{2021 -- 2022}{Principal Software Engineer}{Splunk}{San Francisco, CA}{}{
+\begin{itemize}
+\item Tech lead for project building and deploying an alert ranking service in a cloud environment
+\item Drove effort to integrate alert ranking capability with Splunk Enterprise product
+\item Point person for collaboration with Product Management to determine service requirements
+\end{itemize}}
+
+\cventry{2019 -- 2021}{Senior Software Engineer}{Splunk}{San Francisco, CA}{}{
+\begin{itemize}
+\item Tech lead for project implementing model monitoring for streaming inference
+\item Tech lead for R\&D on log clustering (exploring existing and novel approaches)
+\item Operationalized schema inference model for log data in stream processing system
+\item Performed original research, with Splunkers and academic collaborators
 \end{itemize}}
 
 \cventry{2017 -- 2019}{Software Engineer}{Splunk}{San Francisco, CA}{}{
 \begin{itemize}
 \item Productionized data categorization model in streaming ingest service using Python \& Java
 \item Expanded data types recognized from initial prototype by 20x
-% TODO: add # patents filed
 \end{itemize}}
 
 % GSR - AMP Lab
@@ -116,26 +131,63 @@
 % ugrad research
 \cventry{2003-2007}{Undergraduate Researcher}{UNLV}{Las Vegas, NV}{}{
 \begin{itemize}%
-\item Developed gesture recognition algorithms for robot vision \& implemented in C++
+\item Developed \& implemented gesture recognition algorithms for robot vision in C++
 \end{itemize}}
 
 %\vspace{\smallwidth}
 \section{Technical Skills}
-\cvline{Languages}{Python, Scala, Java, R, C++, Ruby, JavaScript, jQuery}
-\cvline{Frameworks}{Kubernetes, Flink, Spark (including MLlib), Hadoop, Rails}
-\cvline{Interests}{Software Engineering, Big Data, Distributed Computing, Machine Learning, Genomics}
+\cvline{Languages}{Python, Scala, Java, Bash}
+\cvline{Platforms}{Kubernetes, Flink, Spark, Docker}
+\cvline{Frameworks}{Spark MLlib, scikit-learn, Pytorch}
+\cvline{Interests}{Machine Learning, Natural Language Processing, Stream Processing, Big Data, Distributed Computing}
 %\vspace{\smallwidth}
 %\newline{}
-\section{Honors and Awards}
-%\vspace{-0.4cm}
-\cvlistitem{Facebook Grace Hopper Women in Computing Scholarship (2011)}
-\cvlistitem{National Science Foundation Graduate Research Fellowship (2008)}
-\cvlistitem{University of California, Berkeley Chancellor's Fellowship (2007)}
-\cvlistitem{University of Nevada, Las Vegas \textit{Summa Cum Laude} Graduate (2007)}
+
+\section{Patents}
+\cvline{10,942,960}{Automatic Triage Model Execution in Machine Data Driven Monitoring Automation Apparatus with Visualization}
+\cvline{10,942,946}{Automatic Triage Model Execution in Machine Data Driven Monitoring Automation Apparatus}
+\cvline{10,949,420}{Identifying Similar Field Sets Using Related Source Types}
+\cvline{11,100,172}{Providing Similar Field Sets Based on Related Source Types}
+\cvline{11,106,681}{Conditional Processing Based on Inferred Sourcetypes}
+\cvline{Filing}{System and Method for Machine-Learning Based Alert Prioritization}
+\cvline{Filing}{Anomaly Detection in Data Ingested to a Data Intake and Query System}
+\cvline{Filing}{Inferring Source Type Data From Raw Machine Data Using Machine Learning}
+\cvline{Filing}{Detecting, Diagnosing, and Directing Solutions for Source Type Mislabeling of Machine Data, Including Machine Data that May Contain PII, Using Machine Learning}
+
+\section{Presentations}
+\cvline{Apr. 2021}{Co-authored \href{https://www.splunk.com/en_us/blog/it/how-splunk-is-parsing-machine-logs-with-machine-learning-on-nvidia-s-triton-and-morpheus.html}{blog post} on log parsing with machine learning} 
+\cvline{Sept. 2020}{Presented sentiment analysis demos (batch and streaming) for Splunk machine learning \href{https://events.splunk.com/machine_learning_deep_dive2_091020}{webinar} (652 attendees vs. 295 average for Splunk webinars)}
+\cvline{Oct. 2019}{Presented work on log clustering at Splunk .conf Innovation Lab}
+\cvline{Oct. 2018}{Talk at Splunk .conf "Getting Your Data Ready for Machine Learning" (received 4.86/5 audience rating vs. 4.48 average); collaborated on \href{https://docs.splunk.com/Documentation/MLApp/5.2.0/User/GetdatareadyML}{user docs} summarizing talk contents}
+
+\section{Research}
+\cvline{2022}{Babak Barazandeh, \textbf{Kristal Curtis}, Chandrima Sarkar, Ram Sriharsha, and George Michailidis. "On the Convergence of Adam-Type Algorithms for Solving Structured Single Node and Decentralized Min-Max Saddle Point Games." Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2022).}
+\cvline{2022}{Justin Bunker, \textbf{Kristal Curtis}, Mark Girolami, and Ram Sriharsha.  "A Mixture Modeling Approach for Clustering Log Files with Coreset and User Feedback."  Pattern Recognition Letters, Vol. 156, pp. 74--80.}
+\cvline{2015}{\textbf{Kristal Curtis}.  ``Leveraging Similar Regions to Improve Genome Data Processing."  Ph.D. Thesis. Technical Report No. UCB/EECS-2015-199.}
+\cvline{2015}{\textbf{Kristal Curtis}, Ameet Talwalkar, Matei Zaharia, Armando Fox, and David Patterson.  "SiRen:  Leveraging Similar Regions for Efficient \& Accurate Variant Calling."  Technical Report No. UCB/EECS-2015-159.}
+\cvline{2014}{Ameet Talwalkar, Jesse Liptrap, Julie Newcomb, Christopher Hartl, Jonathan Terhorst, \textbf{Kristal Curtis}, Ma'ayan Bresler, Yun S. Song, Michael I. Jordan, and David Patterson.  "SMaSH:  a benchmarking toolkit for human genome variant calling."  Bioinformatics, Vol. 30, No. 19, pp. 2787--2795.}
+\cvline{2012}{Durga Kandasamy, \textbf{Kristal Curtis}, Armando Fox, and David Patterson.  "Using Diversity within the Crowd."  Poster and extended abstract at the ACM Conference on Computer Supported Collaborative Work (CSCW).}
+\cvline{2011}{Matei Zaharia, William J. Bolosky, \textbf{Kristal Curtis}, Armando Fox, David Patterson, Scott Shenker, Ion Stoica, Richard Karp, and Taylor Sittler.  "Faster and More Accurate Sequence Alignment with SNAP."  ArXiv Technical Report 1111.5572v1.}
+\cvline{2011}{Michael Armbrust, \textbf{Kristal Curtis}, Tim Kraska, Armando Fox, Michael J. Franklin, and David Patterson.  "PIQL:  Success-Tolerant Query Processing in the Cloud."  Proceedings of the Very Large Data Bases Endowment Inc. (VLDB Endowment), Vol. 5, No. 3.}
+\cvline{2010}{\textbf{Kristal Curtis}.  "Determining SLO Violations at Compile Time."  M.S. Thesis, UC Berkeley.}
+\cvline{2010}{\textbf{Kristal Curtis}, Peter Bod\'{i}k, Michael Armbrust, Armando Fox, Michael Jordan, and David Patterson.  "Determining SLO Violations at Compile Time."  Work-In-Progress talk and poster at the 8th USENIX Conference on File and Storage Technologies (FAST).}
+\cvline{2009}{\textbf{Kristal Curtis}, Peter Bod\'{i}k, Archana Ganapathi, Armando Fox, Michael Jordan, and David Patterson.  "Combining Queueing-theoretic and Statistical Techniques for Modeling the Impact of Dynamic Workload Mixes on Web 2.0 Service Times."  Poster at the 22nd ACM Symposium on Operating Systems Principles (SOSP).}
+
 
 %\vspace{\smallwidth}
-\section{Leadership}
-\cventry{2019 -- }{Co-organizer of Women in Engineering}{Splunk}{}{}{}
-\cventry{2009 -- 2011}{Women in Computer Science and Engineering (WICSE) Leadership}{UC Berkeley}{}{}{}
+\section{Service}
+\cventry{Summer 2021}{Mentored undergraduate research intern}{Splunk}{}{}{}
+\cventry{2019 -- 2020}{Co-organizer of Women in Engineering}{Splunk}{}{}{}
+\cventry{2009 -- 2011}{Event Coordinator for Women in Computer Science and Engineering (WICSE)}{UC Berkeley}{}{}{}
 \cventry{2010 -- 2013}{Mentor for Undergraduate Researchers}{UC Berkeley}{}{}{}
+
+
+\section{Awards}
+%\vspace{-0.4cm}
+\cvline{2011}{Facebook Grace Hopper Women in Computing Scholarship}
+\cvline{2008}{National Science Foundation Graduate Research Fellowship}
+\cvline{2007}{University of California, Berkeley Chancellor's Fellowship}
+\cvline{2007}{University of Nevada, Las Vegas \textit{Summa Cum Laude} Graduate}
+
 \end{document}
+
